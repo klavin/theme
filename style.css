@@ -1,0 +1,1071 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: Krakatoa Lounge
+Author: Kaela Lavin
+Author URI: http://www.kaelalavin.com/
+Description: This is my theme for the WEB170 WordPress Class
+Version: 1.0
+*/
+
+    /*Browser resets*/
+    body, body * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;	/* declared width = rendered width */
+        }
+
+    img,
+    embed,
+    object,
+    video,
+    iframe,
+    .wp-caption /*wp-caption for flex images in WordPress */ {
+        max-width: 100%; /*never exceed width of parent element */
+    }
+
+    a img {
+        border: none;
+        }
+    /*End browser resets*/
+
+/*Development styles*/
+html {
+	font-size: 16px; /*1rem=16px*/
+    height: 100%;
+	}
+
+body {
+	font-size: 100%;
+	font-family: 'Istok Web', sans-serif;
+	line-height: 1.4;
+	color: #3B2416;
+	height: 100%;
+    /*background-image: url("images/bg-940-grid.jpg");
+	background-repeat: repeat-y;
+	background-position: 50%;*/
+	}
+
+div, header, nav, aside, footer {
+	/*border: 1px solid red;*/
+	}
+
+/*end devo styles*/
+
+/*RESPONSIVE*/
+
+    /* will not validate --------- */
+    html {
+        /* don't resize body copy on iPhone */
+        -webkit-text-size-adjust: none;
+    }
+
+    @-ms-viewport,		/* IE10 */
+    @viewport	{		/* future browsers */
+        width: extend-to-zoom;
+        zoom: 1.0;
+    }
+    /* --------- end will not validate */
+
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+
+
+/* header elements */
+#logo {
+	width: 63.6%;
+}
+
+h1 a span {
+	display: none;
+}
+
+/*navigation styles*/
+    /*global nav styles*/
+
+    a:link,
+    a:visited{
+        text-decoration: none;
+        color: #963B44;
+        }
+
+    a:hover,
+    a:focus{
+        color:#9AABB5;
+        }
+
+        /*main navigation*/
+
+        #toggle {
+            display: none;
+        }
+
+		#nav-mobile {
+			display:none;
+		}
+
+        #nav-main {
+            padding: 20px 0;
+            padding: 1.25rem 0; 
+            margin-top: 112px;
+            margin-top: -7rem;
+            float: right;
+            width: 700px;
+            width: 74.4680851064%;
+        }
+
+        #nav-main li {
+            float: left;
+            line-height: 1.5em;
+            width: 20%;
+            text-align: center;
+            list-style: none;
+            font-size: 125%;
+            border-bottom: 1px solid;
+            
+            }
+
+        #nav-main li:nth-child(3) {
+            width: 15%;
+        }
+
+        #nav-main li:nth-child(3) a {
+            margin-top: 2.1rem;
+        }
+
+        #nav-main li:last-child {
+            padding-left: 0;
+        }
+
+        #nav-main a {
+            display: block;
+            padding-top: 24px;
+            padding-top: 1.5rem;
+            padding-bottom: 16px;
+            padding-bottom: 1rem;
+            vertical-align: middle;
+            color: #3B2416;
+            margin-top: 4rem;
+            }
+
+        #nav-main ul {
+            margin: 0;
+            padding: 0;
+            }
+
+        #nav-main ul li ul.sub-menu {
+            display:none;
+        }
+
+        #nav-main	a:link,
+        #nav-main	a:visited, {
+                text-decoration: none;
+                color: #3B2416;
+                }
+
+        #nav-main li:nth-child(5):hover,
+        #nav-main li:nth-child(5):focus{
+            background-color: #963B44;
+            }
+
+        .page-id-52 #nav-main ul li.current-menu-item {
+            background-color: #963B44;
+        }
+
+        #nav-main li:nth-child(4):hover,
+        #nav-main li:nth-child(4):focus{
+                background-color: #DACCCB;
+                }
+
+        .blog #nav-main ul li.current-menu-item {
+            background-color: #DACCCB;
+        }
+
+        #nav-main li:nth-child(3):hover,
+        #nav-main li:nth-child(3):focus{
+                background-color: #E5E1E2;
+                }
+
+        .page-id-48 #nav-main ul li.current-menu-item {
+            background-color: #E5E1E2;
+        }
+
+        #nav-main li:nth-child(2):hover,
+        #nav-main li:nth-child(2):focus{
+                background-color: #EDAC10;
+                }
+
+        .page-id-46 #nav-main ul li.current-menu-item {
+            background-color: #EDAC10;
+        }
+
+        #nav-main li:nth-child(1):hover,
+        #nav-main li:nth-child(1):focus{
+                background-color: #9AABB5;
+                }
+
+        .page-id-28 #nav-main ul li.current-menu-item {
+        background-color: #9AABB5;
+        }
+
+        #home	a:hover,
+        #home a:focus{
+                background-color: #963B44;
+                }
+        /*end main nav styles*/
+
+    #sidenav {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 2rem;
+    }
+
+            /* navigation on drinks.php*/
+            #drinks-nav {
+                display:none;
+            }
+
+            .display#drinks-nav {
+                display: block;
+                margin-left: .75em;
+                font-size: .9rem;
+            }
+
+            #drink-nav a:link,
+            #drink-nav a:visited {
+              color:#EDAC10;
+            }
+
+            #drink-nav a:hover,
+            #drink-nav a:focus {
+              
+            }
+ /*end drinks.php nav styles */
+                /*footer links*/
+                footer a:link,
+                footer a:visited {
+                    color: #3B2416;
+                }
+
+                footer a:focus,
+                footer a:hover {
+                    color: #963b44;
+                }
+           
+                #social {
+                    float:right;
+                    width: 13.5em;
+                    margin-top:2em;
+                }
+
+                #social ul {
+                    margin-left:0;
+                    padding-left:0;
+                }
+
+                #social li {
+                    float: left;
+                    text-align:right;
+                    margin-left: 2em;
+                    }
+
+                #social .last {
+                    margin-right:0;
+                }
+
+        /*header links*/
+        header h1 a:link,
+        header h1 a:visited{
+            text-decoration: none;
+            color: #963B44;
+            background-color: transparent;
+            }
+
+        header h1 a:hover,
+        header h1 a:focus{
+            color:#e2e6e5;
+            background-color:transparent;
+            }
+        /*end header links*/
+  
+/*footer nav*/
+
+        .footernav {
+            clear: both;
+            margin-left: 0;
+        }
+
+        .footernav li  {
+            float: left;
+            margin-top: 16px;
+            margin-top: 1rem;
+            width: 14.1%;
+        }
+
+        .footernav li li {
+            clear:both;
+            margin-top: 8px;
+            margin-top: .5rem;
+            margin-left: -1em;
+        }
+
+        .footernav a {
+            display: block;
+            width: 6em;
+            margin-bottom: 16px;
+            margin-bottom: 1rem;
+        }
+        
+
+    /*end nav styles*/
+
+/*end header styles*/
+
+
+
+/*Content styles*/
+#wrapper {
+	width: 940px;
+	width: 96%;
+	max-width: 940px; /* for IE8 */
+	max-width: 58.75rem; /* 940/16 */
+	margin: 0 auto;
+	background-image: url("images/sidebar2.png");
+    background-repeat: no-repeat;
+    background-size: 23.40455% 50em /*220/940*/;
+    background-position: 0 8.5em;
+	}
+
+
+/*sidebar*/
+
+.mobile {
+    display: none;
+}
+
+#secondary {
+    width: 220px;
+	width: 31.4285714286%;
+	float: right;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+}
+
+#secondary ul {
+    margin-left: 0;
+}
+/*end sidebar*/
+
+#main {
+    overflow: hidden;
+	width: 700px;
+	width: 74.4680851064%; /*second rule overrides :)*/
+	float: right;
+	}
+
+#main p {
+    margin-top: 16px;
+    margin-top: 1rem;
+}
+
+#main h2,
+#main h1 {
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+}
+
+#content {
+    width: 460px;
+    width: 65.7142857143%;
+    float: left;
+}
+
+    /*hours styling*/
+    #hours {
+    float: right;
+    font-size: 110%;
+    width: 50%;
+    }
+
+    #hours ul {
+    margin-right: 4em;
+    margin-left: .75em;
+    }
+
+    #hours h2 {
+        color:#3B2416;
+        font-size: 2.5em;
+    }
+
+    #hours ul li {
+        margin-bottom: 4px;
+        margin-bottom: .25rem;
+    }
+
+    #tablethours {
+        display: none;
+    }
+    /*end hours styles*/
+
+    /*menu styling*/
+    #menus-nav ul {
+        margin: 0;
+    }
+
+    #menus-nav li {
+       float: left;
+    }
+
+    #menus-nav img {
+        display: block;
+        float: left;
+        padding-left: 0;
+    }
+
+    #menus-nav h2 {
+        float: left;
+        padding: 0;
+    }
+  
+    #menus-nav p {
+        display: block;
+    }
+
+    .text {
+        width: 47.5%;
+        float: right;
+    }
+
+    .text p {
+        clear:both;
+    }
+
+    .reviews li {
+        margin-bottom: 24px;
+        margin-bottom: 2rem;
+    }
+
+/*footer styling*/
+
+footer {
+	background-image:url(images/contemporary_china_2.png);
+	border-radius: 15px;
+	overflow: hidden;
+    padding: 0 0 0 1em;
+	}
+
+footer form, footer p {
+	float: left;
+	margin: .3em 0;
+    margin-top: 40px;
+	margin-top: 2.5em;
+}
+
+footer p {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1.45em;
+    margin-left: 4em;
+    margin-right: 3em;
+}
+
+footer form {
+	width: 40.5%;
+}
+
+.fb {
+    background-color: transparent;
+}
+
+.fb:focus,
+.fb:hover {
+	 background-color: #9aabb5;
+    border-radius: 75px;
+}
+
+.twit {
+    background-color: transparent;
+}
+
+.twit:focus,
+.twit:hover {
+    background-color: #9aabb5;
+    border-radius: 50px;
+}
+/*end footer styles*/
+
+    /*h styles*/
+    h1, h2, h3, h4 {
+       /* margin: .2em;*/
+        }
+
+    h1 {
+        font-family: 'Shadows Into Light Two', cursive;
+        color: #963B44;
+        font-size: 3.5em;
+        }
+
+    h2 {
+        font-family: 'Lobster Two', cursive;
+        font-size: 3.5em;
+        color: #EDAC10;
+        }
+
+    #secondary h2 {
+        color: #3B2416;
+        font-size: 3em;
+        margin-left: 0;
+    }
+
+    h3,
+    .h3 {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 1.75em;
+        }
+
+    #response h3 {
+        margin: 0;
+    }
+
+    h4 {
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 1.25em;
+        }
+    /*end h styles*/
+
+/*list styles*/
+ul {
+    margin-left: 1.5em;
+    list-style: none;
+    }
+
+ul li {
+    margin-bottom: 12px;
+	margin-bottom: .75em;
+	}
+
+ol {
+	margin-left: 2em;
+	}
+
+
+
+li {
+	margin-bottom: .25em;
+	}
+
+dt
+	{
+	font-family: 'Shadows Into Light Two', cursive;
+	font-size: 1.75em;
+    margin-bottom: 4px;
+	margin-bottom: .25rem;
+	}
+
+dd {
+    font-family: 'Shadows Into Light Two', cursive;
+	margin-left: 1.5em;
+	}
+/*end list styles*/
+
+p, ol, dl, dd {
+    margin-bottom: 12px;
+	margin-bottom: .75em;
+	}
+
+.top {
+    float: right;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+}
+
+    /*img styles*/
+	
+	#main img {
+		border-radius: 7px;
+	}
+
+    img.smallest {
+        width: 25%;
+    }
+
+    img.small {
+        width: 40%;
+    }
+
+    img.smallish {
+        width: 48%;
+    }
+
+    img.medium {
+        width: 70%;
+    }
+
+    img.large {
+        width: 100%;
+    }
+
+    img.alignleft{
+        float: left;
+        margin: .25em 20px .25em 0;
+        margin: .25em 1.25rem .25em 0;
+    }
+
+    img.alignright{
+        float: right;
+          margin: .25em 0 .25em 20px;
+        margin: .25em 0 .25em 1.25rem;
+    }
+
+#content article.post-excerpt {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#content img.attachment-thumbnail {
+    float: left;
+    margin: 4px 20px 0 0;
+}
+
+
+        /* Form styles */
+        fieldset {
+            border: none;
+        }
+
+        form p {
+            margin-bottom: 20px;
+            margin-bottom: 1.25em;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            display: block;
+            width: 100%;
+            padding: 0.25em;
+            height: 2em;
+            font-size: 1em;
+            background-image: url(images/contemporary_china_2.png);
+            border: 1px solid #3B2416;
+        }
+
+        #message {
+            background-image: url(images/contemporary_china_2.png);
+            border: 1px solid black;
+        }
+
+        input[type="checkbox"] {
+            margin: 4px 0.25em 4px 0;
+            margin: 0.25rem 0.25em 0.25rem 0;
+            height: 1.28em;
+        }
+
+        input[type="radio"] {
+            padding 1px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 0.25em;
+            font-size: 1em;
+            font-family: 'Istok Web', sans-serif;
+        }
+
+        select {
+            font-size: 1em;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            margin-top: 8px;
+            margin-top: .5rem;
+            margin-bottom: 8px;
+            margin-top: .5rem;
+            height: 3rem;
+            width: 5em;
+            border-radius: 7px;
+            background-image: url(images/contemporary_china_2.png);
+        }
+
+        /*end form styles*/
+
+.section {
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+}
+
+/*good to have*/
+blockquote {
+	line-height: 1.75em;
+	font-style: italic;
+	margin: .5em;
+	}
+
+.clear {
+	clear:both;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.shadow:hover,
+.shadow:focus {
+    box-shadow: 5px 5px 5px black;
+}
+
+.long {
+    float: none;
+    margin-bottom: 8px;
+    margin-bottom: .5rem;
+}
+
+/*Media queries*/
+@media screen and (max-width: 925px) 
+ {
+	 #wrapper {
+	background-image: url("images/mobilepattern.png");
+    background-repeat: no-repeat;
+    background-size: 23.40455% auto /*220/940*/;
+    background-position: right top;
+	}
+     
+    #main {
+        width: auto;
+    }
+     
+     #nav-main {
+         display: none;
+     }
+	 
+     #nav-main ul {
+         margin: auto;
+     }
+     
+	 #nav-main{
+            padding: 20px;
+            padding: 0 1.25rem;
+            margin-top: -24px;
+            margin-top: -2rem;
+			margin-left: -3em;
+        }
+	 
+     #nav-main li {
+		 line-height: 1.5em;
+		 text-align: center;
+		 list-style: none;
+		 font-size: 125%;
+		 border-bottom: 1px solid;
+         float: none;
+         width: 100%;
+         margin-top: 96px;
+         margin-top: 6rem;
+         padding-bottom: 0;
+     }
+	 
+	 #nav-main li.stacked {
+            width: 100%;
+        }
+
+	 
+     #nav-main a {
+		 display: block;
+         padding-top: 0;
+         margin-top: -64px;
+         margin-top: -4rem;
+     }
+     
+     #nav-main ul li ul.sub-menu {
+         display: block;
+     }
+     
+     #toggle {
+         display: block;
+         margin: auto;
+         padding-bottom: 16px;
+         padding-bottom: 1rem;
+     }
+     
+     #main h1 {
+         margin: auto;
+     }
+           
+	 #primary {
+		display: none;
+	 }
+     
+   /* #logo {
+        display: block;
+        margin: auto 25%;
+    }*/
+     
+ 	.desktop {
+        display: none;
+    }
+     
+    .mobile {
+        display: block;
+        margin-top: -80px;
+        margin-top: -5rem;
+    }
+  
+    #hours {
+        display: none;
+    }
+     
+        #tablethours {
+            float: none;
+            font-size: 110%;
+            width: 100%;
+            display: block;
+            margin: 0 25%;
+            }
+
+
+        #tablethours h2 {
+                color:#3B2416;
+                font-size: 2.5em;
+            }
+
+        #tablethours ul li {
+            margin-bottom: 4px;
+            margin-bottom: .25rem;
+        } 
+     
+
+     
+    #hero {
+     width: 65%;   
+    margin-bottom: 48px;
+     margin-bottom: 3rem;
+     margin-left: 9em;
+    }
+     
+	#footercontents {
+		width: 100%;
+		margin-top: 3em;
+	}
+
+	footer form {
+		width: 40%;
+		height: 5em;
+	}
+		
+
+}   
+
+@media screen and (max-width: 500px) {
+    
+	#wrapper {
+	background-image: url("images/mobileside.png");
+    background-repeat: repeat-y;
+    background-size: 100% auto /*220/940*/;
+    background-position: center;
+	}
+	
+    body {
+        background-image: none;
+    }
+ 
+	  
+    #secondary {
+        float: none;
+        width: 100%;
+    }
+    
+	#logo {
+        width: 100%;
+        margin: auto;
+	}
+    
+    #nav-main li {
+        margin-left: 2.5em;
+    }
+	
+	#main {
+		float: none;
+		width: 100%;
+	}
+    
+    #content {
+        width: 100%;
+    }
+    
+    #main p {
+        margin: 0;
+    }
+    
+	#hero {
+        float: none;
+		display: block;
+        margin: auto;
+        width: 100%;
+	}
+	
+    #tablethours {
+        margin: auto;
+    }
+    
+	#drink-nav {
+		float: none;
+	}
+	
+	#drink-nav li{
+		width: 50%;
+	}
+	
+	.top {
+        clear: both;
+    float: none;
+        margin-bottom: 16px;
+        margin-bottom: 1rem;
+}
+    
+    .text {
+        float: none;
+    }
+	
+    .mobile {
+        display: none;
+    }
+	
+	footer p, footer form {
+		float:none;
+	}
+	
+	footer p {
+		margin-left: 5em;
+		height: 5em;
+	}
+	
+	footer img {
+		margin-left: 2em;
+		width: 30%;
+	}
+	
+	footer form {
+        margin-top: -80px;
+		margin-top: -5em;
+		width: 100%;
+		height: 5em;
+	}
+					/* on nav hover */
+					
+    
+    /*https://github.com/msinkula/HCDE598/blob/master/make-your-website-responsive/includes/header.php*/
+    
+    
+    
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Krakatoa Lounge Menus</title>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow"/>
+
+<!-- Remy Sharp Shim -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Istok+Web%7cLobster+Two%7cShadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+<!--toggle menu -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("#toggle").click(function() {
+                $("#nav-main").toggle();
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<body>
+<div id="wrapper">
+
+<header>
+<h1>
+<a href="index.php">
+<img src="images/logobrown2.png" id="logo" alt="Krakatoa Lounge">
+<span>Krakatoa Lounge</span> <!-- SEO -->
+</a>
+</h1>
+
+</header>
+
+<img id="toggle" src="images/multimedia-option.png"  alt="Toggle Menu">
+
+<nav id="nav-main">
+ <ul class="active">
+     
+     
+    <li class="main-on"  id="menus"><a href="menu.php"><br>Menus</a></li>
+     
+        
+    <li id="about"><a href="about.php"><br>About Us</a></li>
+     
+     <li id="events"><a href="events.php"  class="stacked">Lounge Events</a></li>
+     
+     <li id="private"><a href="rental.php"  class="stacked">Private Events</a></li>
+     
+       <li id="reviews"><a href="reviews.php"><br>Reviews</a></li>
+     
+    <!-- <li id="contact"><a href="contact.php"  class="stacked">Contact Us</a></li> -->
+     
+</ul>
+
+    
+</nav>
+
+
+
+
+
+
+
+
+<div id="main">
+    <div id="content">
+		<!-- Main Content -->
+		
+		<h1>Menus</h1>
+    
+          
+    <nav id="menus-nav">
+        <ul>
+            <li><a href="food.php"><img src="images/food.jpg" class="smallish" alt="food"/><div class="text"><h2>Food</h2><p>Bar snacks, small bites, sandwhiches, munchies... prepared in-house</p></div></a></li>
+            
+            <li><a href="drinks.php"><img src="images/drinks.jpg" class="smallish" alt="drinks"/><div class="text"><h2>Drinks</h2><p>Signature and classic cocktails. Local, domestic, and foreign beers; Local, domestic, and foreign wine. Bloody Marys like you wouldn't believe.</p></div></a></li>
+                
+            <li><a href="happy.php"><img src="images/happy.jpg" class="smallish" alt="happy hour" /><div class="text alignleft"><h2>Happy Hour</h2><p>The best way to get smashed for cheap.</p></div></a></li>
+        </ul>       
+    </nav>
+        
+        <p><a class="top" href="#wrapper">Go To Top</a></p>
+            
+
+
+	</div> <!--Closes main -->
+
+<aside id="secondary">
+
+    
+    <h2>Menus</h2>
+    <nav id="sidenav">
+        
+        <ul>
+            <li><h3><a href="food.php">Food</a></h3></li>
+            <li><h3><a href="drinks.php">Drinks</a></h3>
+        
+                <ul id="drinks-nav">
+                    <li><a href="#cocktails"><h3>Cocktails</h3></a></li>
+                    <li><a href="#beer"><h3>Beer</h3></a></li>
+                    <li><a href="#wine"><h3>Wine</h3></a></li>                
+                    <li><a href="#bloodies"><h3>The Bloodies</h3></a></li>           
+                </ul>       
+            </li>
+            <li><h3><a href="happy.php">Happy Hour</a></h3></li>
+        </ul>
+
+    </nav>
+    
+   <div>
+    <h2>Hours</h2>
+      <ul>
+        <li>Monday 4pm-2am</li>
+        <li>Tuesday 4pm-2am</li>
+        <li>Wednesday 4pm-2am</li>
+        <li>Thursday 4pm-2am</li>
+        <li>Friday 4pm-2am</li>
+        <li>Saturday 4pm-2am</li>
+        <li>Sunday 4pm-2am</li>
+      </ul>
+            </div>
+
+</aside>
+</div>
+
+
+
+<footer class="clear">
+
+
+
+    
+    <nav id="social">
+        <ul>
+            <li>
+               <a href="https://www.facebook.com/TheBottleNeckLounge" target="_blank">
+    <img src="images/facebook3.png" id="facebook" alt="Facebook"  class="fb">
+</a>
+            </li>
+            <li class="last"><a href="https://twitter.com/bneck" target="_blank">
+    <img src="images/logo22.png" alt="twitter" class="twit"/>
+  </a></li>    
+        </ul>
+    </nav>
+<form  action="formhandler.php" method="post">
+   <fieldset>
+        <label for="email"> Sign Up For Our Newsletter:</label>
+        <input type="email" name="email" id="email" maxlength="40" required="required" placeholder="(your email here)" />
+   </fieldset>
+ </form>
+<p>
+  <a href="copyright.php">&copy;Kaela Designs
+  </a>
+</p>
+
+</footer>
+</div> <!-- closes wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Krakatoa Lounge About Us</title>
+<meta charset="UTF-8" />
+<meta name="robots" content="noindex, nofollow"/>
+
+<!-- Remy Sharp Shim -->
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href='http://fonts.googleapis.com/css?family=Istok+Web%7cLobster+Two%7cShadows+Into+Light+Two' rel='stylesheet' type='text/css'>
+<link href="style.css" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+<!--toggle menu -->
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("#toggle").click(function() {
+                $("#nav-main").toggle();
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+
+
+<body>
+<div id="wrapper">
+
+<header>
+<h1>
+<a href="index.html">
+<img src="images/logobrown2.png" id="logo" alt="Krakatoa Lounge">
+<span>Krakatoa Lounge</span> <!-- SEO -->
+</a>
+</h1>
+
+</header>
+
+<img id="toggle" src="images/multimedia-option.png"  alt="Toggle Menu">
+
+<nav id="nav-main">
+ <ul class="active">
+     
+     
+    <li  id="menus"><a href="menu.html"><br>Menus</a></li>
+     
+        
+    <li class="main-on" id="about"><a href="about.html"><br>About Us</a></li>
+     
+     <li id="events"><a href="events.html"  class="stacked">Lounge Events</a></li>
+     
+     <li id="private"><a href="rental.html"  class="stacked">Private Events</a></li>
+     
+       <li id="reviews"><a href="reviews.html"><br>Reviews</a></li>
+
+     
+</ul>
+
+    
+</nav>
+   
+   		<div id="main">
+            <div id="content">
+		<!-- Main Content -->
+		
+         
+            
+		<h1>About Us</h1>
+            
+    <img src="images/about.jpg" class="smallish alignright" alt="Beer is tasty." />        
+            
+
+
+            <div class="alignleft">
+        <h3>Need to find us?</h3>    
+            
+         <p>Give us a call at <br><a href="tel:+15555551212">555-555-1212</a></p>
+            
+            
+        <p>Or just come over to 2328 Madison Street Seattle 98112, one block east of 23rd on Madison on the north side of the street.</p>
+            
+        <P>Hang out, have a drink, eat a snack, use our free wifi, meet a friend, watch the game. This is your living room at the junction of Capitol Hill, the Central District, and Madison Valley, except you never have to vacuum.</P>    
+            </div>
+
+        
+  <h2>Contact Us</h2>
+         <form  action="formhandler.php" method="post">
+
+    	<fieldset>
+
+          <p>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" maxlength="70"/>
+   		  </p>
+
+          <p>
+          <label for="email"> Your Email:</label>
+          <input type="email" name="email" class="email" maxlength="40" required="required" />
+          </p>
+
+          <p>
+          <label>Your Message:   </label>
+          <textarea name="message" id="message" cols="30" rows="10">
+          </textarea>
+
+          </p>
+
+          <p>
+          <label>
+          <input type="checkbox" id="newletter" name="newsletter" value="yes" />
+          I would like to recieve news and information about the Krakatoa Lounge.
+          </label>
+          </p>
+
+          <p>What sorts of news and information would you like to receive?<br>
+          <label>
+          <input type="checkbox" name="news[]" id="newsletter" value="newsletter" /> Monthly Newsletter
+          </label>
+
+          <label>
+          <input type="checkbox" name="news[]" id="food" value="food" /> Food and drink specials
+          </label>
+
+          <label>
+          <input type="checkbox" name="news[]" id="parties" value="parties" /> Special events, like Grammy Parties
+          </label>
+
+          <label>
+          <input type="checkbox" name="news[]" id="weekly" value="weekly" /> Weekly events, like Trivia Night
+          </label>
+
+          <label>
+          <input type="checkbox" name="news[]" id="project" value="project" /> News about the owner's latest project, Three Windows Up
+          </label>
+          </p>
+
+          <p>Where did you hear about us? <br>
+          <label>
+          <input type="radio" id="attention-walk" name="attention" value="walk" /> Walked by
+          </label>
+
+          <label>
+          <input type="radio" id="attention-friend" name="attention" value="friend" /> From a friend
+          </label>
+
+          <label>
+          <input type="radio" id="attnetion-blog" name="attention" value="blog" /> From the news or local blog
+          </label>
+
+          <label>
+          <input type="radio" id="attention-yelp" name="attention" value="yelp" /> Yelp
+          </label>
+
+          <label>
+          <input type="radio" id="attention-fan" name="attention" value="fan" /> From a previous project of the owner's
+          </label>
+          </p>
+            
+        <p>What's your favorite reason to come to Krakatoa Lounge? <br>
+        <select>
+            <option value="food">The food</option>
+            <option value='drink'>The drinks</option>
+            <option value='atmos'>The atmosphere</option>
+            </select>    
+            </p>    
+        </fieldset>
+
+    	<input type="submit" value="submit">
+      </form>
+
+
+	</div>
+
+<aside id="secondary">
+
+    
+    <h2>Menus</h2>
+    <nav id="sidenav">
+        
+        <ul>
+            <li><h3><a href="food.html">Food</a></h3></li>
+            <li><h3><a href="drinks.html">Drinks</a></h3>
+        
+                <ul id="drinks-nav">
+                    <li><a href="#cocktails"><h3>Cocktails</h3></a></li>
+                    <li><a href="#beer"><h3>Beer</h3></a></li>
+                    <li><a href="#wine"><h3>Wine</h3></a></li>                
+                    <li><a href="#bloodies"><h3>The Bloodies</h3></a></li>           
+                </ul>       
+            </li>
+            <li><h3><a href="happy.html">Happy Hour</a></h3></li>
+        </ul>
+
+    </nav>
+    
+   <div>
+    <h2>Hours</h2>
+      <ul>
+        <li>Monday 4pm-2am</li>
+        <li>Tuesday 4pm-2am</li>
+        <li>Wednesday 4pm-2am</li>
+        <li>Thursday 4pm-2am</li>
+        <li>Friday 4pm-2am</li>
+        <li>Saturday 4pm-2am</li>
+        <li>Sunday 4pm-2am</li>
+      </ul>
+            </div>
+
+</aside>
+</div>
+
+
+
+<footer class="clear">
+
+
+
+    
+    <nav id="social">
+        <ul>
+            <li>
+               <a href="https://www.facebook.com/TheBottleNeckLounge" target="_blank">
+    <img src="images/facebook3.png" id="facebook" alt="Facebook"  class="fb">
+</a>
+            </li>
+            <li class="last"><a href="https://twitter.com/bneck" target="_blank">
+    <img src="images/logo22.png" alt="twitter" class="twit"/>
+  </a></li>    
+        </ul>
+    </nav>
+<form  action="formhandler.php" method="post">
+   <fieldset>
+        <label for="email"> Sign Up For Our Newsletter:</label>
+        <input type="email" name="email" id="email" maxlength="40" required="required" placeholder="(your email here)" />
+   </fieldset>
+ </form>
+<p>
+  <a href="copyright.html">&copy;Kaela Designs
+  </a>
+</p>
+
+</footer>
+</div> <!-- closes wrapper -->
+
+</body>
+</html>
